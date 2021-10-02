@@ -10,33 +10,50 @@
         Height="400"
         Width="950">
     <Grid>
-        <TextBlock HorizontalAlignment="Left"
-                   Margin="158,59,0,0"
+        <TextBlock x:Name="MensajeTextBlock"
+                   HorizontalAlignment="Left"
+                   Margin="10,52,0,0"
                    TextWrapping="Wrap"
                    Text="Desarrollo de interfaces"
                    VerticalAlignment="Top"
-                   Height="70"
-                   Width="604"
+                   Height="121"
+                   Width="922"
                    TextAlignment="Center"
                    Foreground="#FF496AFF"
                    FontSize="40"
                    FontWeight="Bold"
                    FontFamily="Segoe UI Black">
             <TextBlock.Effect>
-                <DropShadowEffect BlurRadius="10"
-                                  Direction="300"
-                                  ShadowDepth="4" />
+                <DropShadowEffect/>
             </TextBlock.Effect>
         </TextBlock>
-
+        <RadioButton  x:Name="PequenyoRadioButton"
+                      Content="Pequeño"
+                      Tag="36"
+                      GroupName="tamanyos"
+                      HorizontalAlignment="Left"
+                      Margin="112,266,0,0"
+                      VerticalAlignment="Top"
+                      RenderTransformOrigin="0.5,0.5"
+                      Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3"
+                                    ScaleY="3" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
         <RadioButton  x:Name="MedianoRadioButton"
+                      Tag="48"
                       Content="Mediano"
                       GroupName="tamanyos"
                       IsChecked="True"
                       HorizontalAlignment="Left"
-                      Margin="437,267,0,0"
+                      Margin="430,267,0,0"
                       VerticalAlignment="Top"
-                      RenderTransformOrigin="0.5,0.5">
+                      RenderTransformOrigin="0.5,0.5"
+                      Checked="RadioButton_Checked">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="3"
@@ -45,12 +62,14 @@
             </RadioButton.RenderTransform>
         </RadioButton>
         <RadioButton  x:Name="GrandeRadioButton"
+                      Tag="72"
                       Content="Grande"
                       GroupName="tamanyos"
                       HorizontalAlignment="Left"
                       Margin="733,268,0,0"
                       VerticalAlignment="Top"
-                      RenderTransformOrigin="0.5,0.5">
+                      RenderTransformOrigin="0.5,0.5"
+                      Checked="RadioButton_Checked">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="3"
@@ -59,23 +78,5 @@
                 </TransformGroup>
             </RadioButton.RenderTransform>
         </RadioButton>
-        <RadioButton  x:Name="PequenyoRadioButton"
-                      Content="Pequeño"
-                      GroupName="tamanyos"
-                      HorizontalAlignment="Left"
-                      Margin="112,266,0,0"
-                      VerticalAlignment="Top"
-                      RenderTransformOrigin="0.5,0.5">
-            <RadioButton.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="3"
-                                    ScaleY="3" />
-                    <SkewTransform />
-                    <RotateTransform />
-                    <TranslateTransform />
-                </TransformGroup>
-            </RadioButton.RenderTransform>
-        </RadioButton>
-
     </Grid>
 </Window>

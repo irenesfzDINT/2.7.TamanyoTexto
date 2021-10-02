@@ -25,5 +25,9 @@ namespace TamanyoTexto
             InitializeComponent();
         }
 
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            MensajeTextBlock.FontSize = int.Parse((sender as RadioButton).Tag.ToString());
+        }
     }
 }
