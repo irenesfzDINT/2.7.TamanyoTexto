@@ -6,8 +6,76 @@
         xmlns:local="clr-namespace:TamanyoTexto"
         mc:Ignorable="d"
         Icon="assets/icon.ico"
-        Title="Tamaño del texto" Height="400" Width="950">
+        Title="Tamaño del texto"
+        Height="400"
+        Width="950">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="158,59,0,0"
+                   TextWrapping="Wrap"
+                   Text="Desarrollo de interfaces"
+                   VerticalAlignment="Top"
+                   Height="70"
+                   Width="604"
+                   TextAlignment="Center"
+                   Foreground="#FF496AFF"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   FontFamily="Segoe UI Black">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="10"
+                                  Direction="300"
+                                  ShadowDepth="4" />
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <RadioButton  x:Name="MedianoRadioButton"
+                      Content="Mediano"
+                      GroupName="tamanyos"
+                      IsChecked="True"
+                      HorizontalAlignment="Left"
+                      Margin="437,267,0,0"
+                      VerticalAlignment="Top"
+                      RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3"
+                                    ScaleY="3" />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton  x:Name="GrandeRadioButton"
+                      Content="Grande"
+                      GroupName="tamanyos"
+                      HorizontalAlignment="Left"
+                      Margin="733,268,0,0"
+                      VerticalAlignment="Top"
+                      RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3"
+                                    ScaleY="3" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton  x:Name="PequenyoRadioButton"
+                      Content="Pequeño"
+                      GroupName="tamanyos"
+                      HorizontalAlignment="Left"
+                      Margin="112,266,0,0"
+                      VerticalAlignment="Top"
+                      RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3"
+                                    ScaleY="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+
     </Grid>
 </Window>

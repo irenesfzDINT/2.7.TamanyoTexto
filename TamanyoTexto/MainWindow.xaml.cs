@@ -24,5 +24,6 @@ namespace TamanyoTexto
         {
             InitializeComponent();
         }
+
     }
 }
